@@ -25,7 +25,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
         child: Column(
           children: <Widget>[
             ElevatedButton(
-              child: const Padding(
+              child: Padding(
                 padding: EdgeInsets.all(15),
                 child: Text("Ir para a segunda tela"),
               ),
@@ -33,7 +33,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => TelaSecundaria()
+                        builder: (context) => TelaSecundaria(valor: "Maria",)
                     )
                 );
               },
